@@ -24,7 +24,7 @@ public class JUnitTest {
 
         // JUnit Tests done here, tried to make fail first with false expected results
         Student sta = new Student("John","Reddington",32,"01/11/81",15104599);
-        assertEquals("Reddington32",sta.getUsername());
+        assertEquals("Reddington31",sta.getUsername());
 
         Student stb = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals("John",stb.getFirst_name());
