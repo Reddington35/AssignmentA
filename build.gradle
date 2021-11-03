@@ -15,6 +15,6 @@ dependencies {
     implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.7.0.RELEASE'
 }
 
-test {
-    useJUnit()
-}
+//test {
+  //  useJUnit()
+//}
