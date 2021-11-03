@@ -18,54 +18,54 @@ import static org.junit.Assert.*;
  * @author jredd
  */
 public class JUnitTest {
-    
+
     @Test
     public void JUnitTests() {
-        
+
         // JUnit Tests done here, tried to make fail first with false expected results
         Student sta = new Student("John","Reddington",32,"01/11/81",15104599);
-        assertEquals("Reddington31",sta.getUsername());
-        
+        assertEquals("Reddington32",sta.getUsername());
+
         Student stb = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals("John",stb.getFirst_name());
-        
+
         Student stc = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals("John",stc.getFirst_name());
-        
+
         Student std = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals("Reddington",std.getSurname());
-        
+
         Student ste = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals(32,ste.getAge());
-        
+
         Student stf = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals("01/11/81",stf.getDob());
-        
+
         Student stg = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals("01/11/81",stg.getDob());
-        
+
         Student sth = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals(15104599,sth.getId());
-        
+
         Module moda = new Module("Programming", "CT2103");
         assertEquals("Programming",moda.getMod_name());
-        
+
         Module modb = new Module("Programming", "CT2103");
         assertEquals("CT2103",modb.getMod_id());
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
