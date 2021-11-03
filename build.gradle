@@ -18,5 +18,3 @@ dependencies {
 test {
     useJUnit()
 }
-
-gradlew clean test
