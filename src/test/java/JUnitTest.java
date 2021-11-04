@@ -24,7 +24,7 @@ public class JUnitTest {
 
         // JUnit Tests done here, tried to make fail first with false expected results
         Student sta = new Student("John","Reddington",32,"01/11/81",15104599);
-        assertEquals("Reddington31",sta.getUsername());
+        assertEquals("Reddington32",sta.getUsername());
 
         Student stb = new Student("John","Reddington",32,"01/11/81",15104599);
         assertEquals("John",stb.getFirst_name());
@@ -50,8 +50,9 @@ public class JUnitTest {
         Module moda = new Module("Programming", "CT2103");
         assertEquals("Programming",moda.getMod_name());
 
+        // Test chosen to fail
         Module modb = new Module("Programming", "CT2103");
-        assertEquals("CT2103",modb.getMod_id());
+        assertEquals("CT2104",modb.getMod_id());
     }
 
     @BeforeClass
