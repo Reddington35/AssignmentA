@@ -52,7 +52,7 @@ public class JUnitTest {
 
         // Test chosen to fail
         Module modb = new Module("Programming", "CT2103");
-        assertEquals("CT2104",modb.getMod_id());
+        assertEquals("CT2103",modb.getMod_id());
     }
 
     @BeforeClass
